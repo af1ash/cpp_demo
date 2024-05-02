@@ -9,7 +9,7 @@ enable_testing()
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(Process_Dir ${PROJECT_SOURCE_DIR}/src/process)
 set(Pnc_Map_Dir ${PROJECT_SOURCE_DIR}/src/pnc_map)
-set(EIGEN3_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/lib/eigen-3.4.0)
+set(EIGEN3_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/libs/eigen-3.4.0)
 list(APPEND CMAKE_MODULE_PATH "${EIGEN3_INCLUDE_DIR}/cmake" )
 message("CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
 
