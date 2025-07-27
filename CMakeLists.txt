@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.16)
 project(planning
     VERSION 0.0.1
 )
@@ -13,11 +13,11 @@ set(EIGEN3_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/libs/eigen-3.4.0)
 list(APPEND CMAKE_MODULE_PATH "${EIGEN3_INCLUDE_DIR}/cmake" )
 message("CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
 
-find_package(EIGEN3 3.4 REQUIRED)
+# find_package(EIGEN3 3.4 REQUIRED)
 
-if(TARGET Eigen3::Eigen)
-    message(STATUS "**** Eigen3 3.4 find in ${EIGEN3_INCLUDE_DIR}")
-endif()
+# if(TARGET Eigen3::Eigen)
+#     message(STATUS "**** Eigen3 3.4 find in ${EIGEN3_INCLUDE_DIR}")
+# endif()
 
 
 add_subdirectory(src)
